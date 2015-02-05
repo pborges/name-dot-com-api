@@ -1,6 +1,7 @@
 .idea/*
 *.iml
-src/spike/*
+src/main/spike/*
+src/main/resources/*
 
 # Created by .gitignore support plugin (hsz.mobi)
 ### Java template

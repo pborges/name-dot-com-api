@@ -104,4 +104,11 @@ public class NameDotComAPI {
         }
         createDNSRecord(hostname, domain, ip);
     }
+
+    public String getExternalIp() throws UnirestException {
+        log.debug("getExternalIp();");
+
+        log.debug("REQUEST(getExternalIp)");
+        return Unirest.get("http://checkip.amazonaws.com").asString().getBody();
+    }
 }
